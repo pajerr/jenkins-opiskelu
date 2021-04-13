@@ -1,6 +1,6 @@
 job('NodeJS Docker example') {
     scm {
-        git('https://github.com/pajerr/jenkins-opiskelu/job-dsl/nodejsdocker.groovy') {  node -> // is hudson.plugins.git.GitSCM
+        git('git://github.com/wardviaene/docker-demo.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('Testing')
             node / gitConfigEmail('rosk0ajt90awj@iawjt089watj0.watoiuawthji')
         }
